@@ -1,0 +1,420 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+  background-color: #E3E2DE;
+}
+.navbar {
+    display: flex;
+    background-color: #A9143C;
+    padding: 40px;
+    /* position: relative; */
+    gap: 50px;
+  }
+  .navbar a {
+    text-decoration: none;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 200px;
+    font-weight: 700;
+    color: #E3E2DE;
+  }
+  .navbar a:hover {
+    color: white;
+    transition: 0.8;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 60px;
+    margin-top: 15px;
+    border-style: double;
+    border-radius: 20px;
+    border-left: none;
+    padding: 20px;
+    line-height: 45px;
+  }
+  .info h1 {
+    display: flex;
+    font-family: rockwell;
+    font-size: 30px;
+    margin-left: 15px;
+  }
+  .info p {
+    display: flex;
+    font-family: century;
+    font-size: 22px;
+    margin-left: 15px;
+  }
+  .pic {
+    height: 300px;
+    width: auto;
+    margin-left: 15px;
+    top: 80px;
+    border-style: solid;
+    position: relative;
+  }
+.form {
+  position: relative;
+  margin-top: 60px;
+}
+.names {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 60px;
+  margin-top: 15px;
+  justify-content: flex-end;
+}
+#teamname {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+#captainname {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+.loc1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: flex-end;
+}
+#country {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 27.2%;
+}
+#city {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+#address1 {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+#address2 {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+.loc2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+#postcode {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+#state {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+.nm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+#numberof {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+#kcbs {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+.nm2 {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+#phone {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+#email {
+  padding: 20px;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 2.5px;
+  width: 25%;
+}
+.nm3 {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.button {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+}
+#submit {
+  padding: 20px;
+  background-color:#A9143C;
+  border-radius: 30px;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 15%;
+}
+.socialmedia {
+  display: block;
+  z-index: 4;
+  color: black;
+  padding: 5px;
+  font-size: 30px;
+  margin-left: 2px;
+}
+.socialmedia a {
+  text-decoration: none;
+  color: black;
+}
+.ft {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  /* margin-left: px; */
+  font-size: 13px;
+}
+footer {
+  border-top: solid;
+}
+.section {
+  margin-left: 15px;
+  margin-top: -120px;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.slider {
+  width: 800px;
+  height: 500px;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  position: absolute;
+}
+.slide {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+.slide input {
+  display: none;
+}
+.st {
+  width: 20%;
+  transition: 2s;
+}
+.st img {
+  width: 800px;
+  height: 500px;
+}
+.nav-m {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  justify-content: center;
+  display: flex;
+}
+.m-btn {
+  border: 2px solid #E3E2DE;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.m-btn:not(:last-child){
+  margin-right: 30px;
+}
+.m-btn:hover {
+  background-color: #E3E2DE;
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+.nav-auto{
+  position: absolute;
+  width: 800px;
+  margin-top:460px;
+  display: flex;
+  justify-content: center;
+}
+.nav-auto div{
+  border: 2px solid #A9143C;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.nav-auto div:not(:last-child){
+  margin-right: 30px;
+  justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+  background-color: #A9143C;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+  background-color: #A9143C;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+  background-color: #A9143C;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+  background-color: #A9143C;
+}
+.hero4 {
+  position: relative;
+  /* top: -714px; */
+  z-index: -3;
+  border-style: solid;
+  border-left-width: 3px;
+  display: flex;
+}
+@media screen and (max-width:1700px) {
+  #teamname {
+    padding: 20px;
+    border-radius: 30px;
+    border-color: black;
+    border-width: 2.5px;
+    width: 20%;
+  
+}
+#captainname {
+  width: 20%;
+}
+#country {
+  width: 22.6%;
+}
+#city {
+  width: 20%;
+}
+#address1 {
+  width: 20%;
+}
+#address2 {
+  width: 20%;
+}
+#state {
+  width: 20%;
+}
+#postcode {
+  width: 20%;
+}
+#kcbs {
+  width: 20%;
+}
+#numberof {
+  width: 20%;
+}
+#phone {
+  width: 20%;
+}
+#email {
+  width: 20%;
+}
+}
+@media screen and (max-width:1548px) {
+  #teamname {
+    padding: 20px;
+    border-radius: 30px;
+    border-color: black;
+    border-width: 2.5px;
+    width: 15%;
+  
+}
+#captainname {
+  width: 15%;
+}
+#country {
+  width: 17.6%;
+}
+#city {
+  width: 15%;
+}
+#address1 {
+  width: 15%;
+}
+#address2 {
+  width: 15%;
+}
+#state {
+  width: 15%;
+}
+#postcode {
+  width: 15%;
+}
+#kcbs {
+  width: 15%;
+}
+#numberof {
+  width: 15%;
+}
+#phone {
+  width: 15%;
+}
+#email {
+  width: 15%;
+}
+}

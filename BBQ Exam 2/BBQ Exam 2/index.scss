@@ -1,0 +1,401 @@
+@import url('https://fonts.cdnfonts.com/css/hello-onyx');
+@font-face {
+    font-family: "Onyx";
+    src:url(("https://fontsforyou.com/fonts/o/Onyx.ttf"));
+}
+@import url('https://fonts.cdnfonts.com/css/stanley');
+@font-face {
+    font-family: "Rockwell";
+    src: url(https://freefontsdownload.net/free-rockwell-condensed-font-37387.htm?fbclid=IwAR328w5CskFzTraTZcv_EueO5J2juc0ePdZl-s-o60OB07ur1ervqruevMk);
+
+}
+@font-face {
+    font-family: "century";
+    src: url(https://freefontsdownload.net/free-century_schoolbook-font-69318.htm?fbclid=IwAR3Hc2u-dAGpNz4T8SVvdJRjFOwVAcgkl1SonLihDGgTYWSuIhsXdyRnR3U);
+}
+//palette
+$primary: #A9143C;
+$secondary: #E3E2DE;
+$gold: #FFEC00;
+
+//fonts
+$base-font-family: Onyx;
+$font-size-xxl: 115px;
+$font-size-l: 85px;
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url(images/background\ attempt.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 1000px;
+    background-color: $secondary;
+    margin: 0px;
+}
+
+.logo {
+    position: absolute;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    // justify-content: space-around;
+    background-color: $primary;
+    padding: 40px;
+    position: relative;
+    gap: 50px;
+    
+   
+    
+    a {
+        text-decoration: none;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        // color: #FFEC00;
+        font-size: 25px;
+        margin-left: 200px;
+        font-weight: 700;
+        color: $secondary;
+    }
+    a:hover {
+        color: white;
+        transition: 0.8;
+    }
+}
+.titles {
+    display: flex;
+    justify-content: space-between;
+    .first{
+        color: $secondary;
+        font-family: onyx;
+        font-size: $font-size-xxl;
+        margin-left: 15px;
+    }
+    .second {
+        color: $secondary;
+        font-family: onyx;
+        font-size: $font-size-xxl;
+    }
+    .third{
+        color: $secondary;
+        font-family: onyx;
+        font-size: $font-size-xxl;
+        margin-right: 15px;
+    }
+}
+.titles2 {
+    display: flex;
+    justify-content: space-evenly;
+    .godina {
+        color: $gold;
+        font-family: onyx;
+        font-size: $font-size-xxl;
+        margin-top: -25px;
+        margin-left: 40px;
+    }
+    .win {
+        color: $gold;
+        font-family: onyx;
+        font-size: $font-size-xxl;
+        margin-top: -25px;
+        
+    }
+    .love {
+        color: $primary;
+        font-family: onyx;
+        font-size: $font-size-xxl;
+        margin-top: -25px;
+        margin-left: 400px;
+    }
+}
+// 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 480px;
+    margin-left: 15px;
+    height: 180px;
+    align-items: flex-end;
+    
+    .register {
+        font-size: 25px;
+        font-family: century;
+        font-weight: 600;
+        background-color: $gold;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+        // flex-shrink: 2;
+    }
+    .terms {
+        font-size: 25px;
+        font-family: century;
+        font-weight: 600;
+        background-color: $gold;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .sauce {
+        font-size: 25px;
+        font-family: century;
+        font-weight: 600;
+        background-color: $primary;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+        margin-left: -100px;
+    }
+    .register a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-family: helvetica, arial;
+    }
+    .terms a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-family: helvetica, arial;
+    }
+    .sauce a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-family: helvetica, arial;
+    }
+    .register a:hover {
+        color: white;
+        transition: 0.8s;
+    }
+     .register:hover {
+        background-color: #B8a404;
+        transition: 0.8s;
+    }
+    .terms a:hover {
+        color: white;
+        transition: 0.8s;
+    }
+    .terms:hover {
+        background-color: #B8a404;
+        transition: 0.8s;
+    }
+    .sauce a:hover {
+        color: white;
+        transition: 0.8s;
+    }
+    .sauce:hover {
+        background-color: #78122d;
+        transition: 0.8s;
+    }
+}
+
+
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+    border-style: double;
+    border-width: 4px;
+    border-radius: 15px;
+    border-color: white;
+    text-align: center;
+    padding: 50px;
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+        color: #807600;
+        font-family: "Rockwell";
+        font-size: 55px;
+        font-weight: 500;
+        margin-top: 60px;
+        text-indent: 100px;
+        position: relative;
+        right: 35px;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        color: #807600;
+        font-size: 25px;
+        font-family: "century";
+        text-indent: 30px;
+        text-align:center;
+        margin-bottom: 10px;
+    }
+}
+.covid{
+    margin-top: 25px;
+    // display: flex;
+    // position: relative;
+    .hero {
+        display: flex;
+        // position: absolute;
+        position: relative;
+        
+    }
+    .covidinfo {
+        margin-left: 15px;
+        // margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+
+    }
+    .header1 {
+        color: #807600;
+        font-size: 55px;
+        font-weight: 700;
+        font-family: rockwell;
+        background-color: $primary;
+        opacity: 0.8;
+    }
+    .header2 {
+        color: #807600;
+        font-size: 45px;
+        font-family: century;
+        background-color: white;
+        opacity: 0.6;
+    }
+    ul li {
+        color: #807600;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    ul {
+        background-color: white;
+        padding: px;
+        opacity: 0.6;
+    }
+    p {
+        font-size: 30px;
+        margin-top: 10px;
+        color: #A9143C;
+        background-color: $secondary;
+        opacity: 0.6;
+        padding: 5px;
+    }
+}
+.socialmedia {
+    display: block;
+    z-index: 4;
+    color: black;
+    padding: 5px;
+    font-size: 30px;
+    margin-left: 2px;
+}
+.socialmedia a {
+    text-decoration: none;
+    color: black;
+}
+.ft {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    margin-left: px;
+    font-size: 13px;
+}
+footer {
+    border-top: solid;
+}
+.pic {
+    width: 100%;
+}
+@media screen and (max-width:1660px) {
+    .register {
+        margin-bottom: 30px;
+        padding: 5px;
+        
+    }
+    .terms {
+        margin-bottom: 30px;
+        padding: 5px;
+        font-size: 5px;
+    }
+    .sauce {
+        margin-bottom: 30px;
+        padding: 5px;
+        font-size: 5px;
+    }
+}
+@media screen and (max-width:1660px) {
+    // .pic {
+    //     width: 1660px;
+    // }
+}
+@media screen and (max-width:1580px) {
+    .titles .first {
+        font-size: 100px;
+    }
+    .titles .second {
+        font-size: 100px;
+    }
+    .titles .third {
+        font-size: 100px;
+    }
+    .titles2 .godina {
+        font-size: 100px;
+    }
+    .titles2 .win {
+        font-size: 100px;
+    }
+    .titles2 .love {
+        font-size: 100px;
+    }
+    // .pic {
+    //     width: 1580px;
+    // }
+    body {
+        background-image: url(images/backgroundattempt2.jpg);
+    }
+}
+@media screen and (max-width:1500px) {
+    // .pic {
+    //     width: 1500px;
+    // }
+}
+@media screen and (max-width: 1480px) {
+    .hero {
+        width: 100px;
+    }
+    .pic {
+        width: 1480px;
+    }
+}
+@media screen and (max-width:1400px) {
+    .pic {
+        width: 1400px;
+    
+    }
+    
+    .text p {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:1380px) {
+    .pic {
+        width: 1380px;
+    }
+}
+@media screen and (max-width:1330px) {
+    .pic {
+        width: 1330px;
+    }
+}
+@media screen and (max-width:1280px) {
+    .pic {
+        width: 1280px;
+    }
+}
